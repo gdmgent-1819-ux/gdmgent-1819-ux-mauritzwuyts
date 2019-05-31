@@ -7,3 +7,210 @@ body {
   height: inherit;
   margin: 0;
 }
+
+.image {
+  background-image: url(../images/home.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: 100%;
+  background-position-y: -100px;
+}
+
+.taal {
+  display: flex;
+  position: absolute;
+  right:120px;
+  top: 2px;
+  margin: 0 auto;
+  max-width: 1200px;
+
+}
+
+.TEST {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+.navigation {
+  background-color: var(--c-dark);
+}
+
+.flex {
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+.col-7 h1 {
+  color: white;
+  font-size: 6rem;
+  margin: 0;
+}
+
+h3 {
+  color: var(--c-white);
+  font-size: 3rem;
+  margin: 0;
+}
+
+.col h2 {
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+.underline {
+  border-bottom: 2px solid white;
+  margin: 0;
+
+}
+
+.sales {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--c-licht);
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--c-primary);
+  margin: 30px 0px 0px 0px;
+  margin-right: 10px
+}
+
+.flexBox {
+  display: flex;
+  flex-direction: row;
+}
+
+footer p {
+  font-weight: 700;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+footer .navigation li {
+  color: white;
+  font-weight: 300;
+  font-size: 1rem;
+  list-style-type: none;
+  display: inline;
+  margin: 30px;
+
+}
+
+footer .navigation {
+  padding: 20px;
+}
+
+.hamburger {
+  visibility: hidden;
+}
+
+.men {
+  margin: 20px;
+  color: var(--c-white);
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  list-style-type: none;
+  display: inline;
+}
+
+.men:hover {
+  font-weight: 700;
+}
+h1{
+  color: var(--c-primary);
+  font-weight: 400;
+  font-size: 4.5rem;
+  margin: 0px;
+}
+
+
+@media (max-width: 541px) {
+  .taal {
+display: none;
+  
+  }
+
+  .navBar {
+    display: none;
+    font-size: 0px;
+    position: absolute;
+  }
+
+  .hamburger {
+    visibility: visible;
+    color: white;
+  }
+
+  .col-7 h1 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  h3 {
+    color: var(--c-white);
+    font-size: 0.75rem;
+  }
+
+  .sales {
+    color: white;
+    font-size: 0.6rem;
+  }
+
+  .underline {
+    border-bottom: 1px solid white;
+    margin: 0;
+  }
+
+  h1 {
+    color: var(--c-primary);
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  .col h2 {
+    font-size: .75rem;
+    margin: 0px;
+  }
+
+  p {
+    font-size: .75rem;
+  }
+
+  footer .navigation li {
+    color: white;
+    font-weight: 300;
+    font-size: .6rem;
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+
+  }
+
+  footer .navigation {
+    padding: 10px;
+  }
+}

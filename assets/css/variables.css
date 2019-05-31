@@ -1,26 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i');
 
 :root {
-  /**
-   * Colour palette
-   */
-  --c-primary: hsl(190, 100%, 40%);
+  /** Colours */
 
-  /**
-   * Layout
-   */
-  --l-gutter: 1rem;
+  --c-primary: #10678F;
+  --c-secondary: #C2293D;
+  --c-white: #FFFFFF;
+  --c-dark: hsla(0, 0%, 11%, 0.45);
+  --c-licht: hsla(0, 0%, 91%, 1);
+  --c-black:#333131;
 
-  /**
-   * Typography
-   */
-  --t-primary: Arial, Helvetica, sans-serif;
-  --t-secondary: Arial, Helvetica, sans-serif;
-  --t-tertiary: monospace;
+  /** Fonts */
+  --f-body: 'Nunito Sans', sans-serif;
+  /*--f-heading: 'Source Sans Pro';*/
 
-  --t-headline: var(--t-primary);
-  --t-subtitle: var(--t-primary);
-  --t-body: var(--t-secondary);
-  --t-code: var(--t-tertiary);
+  /** Grid */
+  --gutter: .75rem;
 }
-
-

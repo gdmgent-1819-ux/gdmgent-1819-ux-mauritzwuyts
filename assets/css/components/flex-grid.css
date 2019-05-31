@@ -1,7 +1,39 @@
+html[data-debug] [class*="col"] {
+  border: 1px dashed rgba(0, 0, 0, .05);
+  min-height: 4rem;
+  position: relative;
+}
+
+html[data-debug] [class*="col"]::before {
+  background-color: rgba(0, 0, 0, .25);
+  border-radius: .25rem;
+  bottom: 0;
+  color: white;
+  content: attr(class);
+  font-size: .75rem;
+  left: 0;
+  margin: var(--gutter);
+  min-height: 1rem;
+  padding: .25rem .5rem;
+  position: absolute;
+  right: 0;
+  text-shadow: 0 0 1px black, 1px 1px 1px black;
+  top: 0;
+}
+
+html[data-debug] .grid-16 [class*="col"]::before {
+  content: 'grid-16 'attr(class);
+}
+
+.grid-16 {
+  --cols: 16;
+  /* grid met 16 kolommen */
+}
+
 .container {
   margin: 0 auto;
-  max-width: calc(1200px - var(--l-gutter));
-  padding: calc(var(--l-gutter) / 2);
+  max-width: 1200px;
+  /*padding: var(--gutter);*/
 }
 
 .row {
@@ -21,6 +53,11 @@
   flex-wrap: wrap;
 }
 
+.col {
+  box-sizing: border-box;
+  flex: 1 1 auto;
+}
+
 .col,
 .col-1,
 .col-2,
@@ -35,15 +72,7 @@
 .col-11,
 .col-12 {
   box-sizing: border-box;
-  padding: calc(var(--l-gutter) / 2);
-}
-
-.no-gutter {
-  padding: 0;
-}
-
-.col {
-  flex: 1 1 auto;
+  padding: var(--gutter);
 }
 
 .col-1 {
@@ -142,7 +171,6 @@
   margin-left: var(--col-12);
 }
 
-/** Small Device and up */
 @media (min-width: 576px) {
   .col-sm-1 {
     flex: 0 0 var(--col-01);
@@ -241,7 +269,6 @@
   }
 }
 
-/** Medium Device and up */
 @media (min-width: 768px) {
   .col-md-1 {
     flex: 0 0 var(--col-01);
@@ -290,6 +317,7 @@
   .col-md-12 {
     flex: 0 0 var(--col-12);
   }
+
   .offset-md-1 {
     margin-left: var(--col-01);
   }
@@ -337,10 +365,8 @@
   .offset-md-12 {
     margin-left: var(--col-12);
   }
-
 }
 
-/** Large Device and up */
 @media (min-width: 992px) {
   .col-lg-1 {
     flex: 0 0 var(--col-01);
@@ -437,10 +463,9 @@
   .offset-lg-12 {
     margin-left: var(--col-12);
   }
-
 }
 
-/** Extra Large Device and up */
+/**/
 @media (min-width: 1200px) {
   .col-xl-1 {
     flex: 0 0 var(--col-01);
@@ -537,5 +562,4 @@
   .offset-xl-12 {
     margin-left: var(--col-12);
   }
-
 }
