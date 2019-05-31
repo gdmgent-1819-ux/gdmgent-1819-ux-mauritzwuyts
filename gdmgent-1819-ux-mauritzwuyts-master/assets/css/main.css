@@ -1,0 +1,115 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+@import url('variables.css');
+@import url('base.css');
+
+@import url('components/flex-grid.css');
+@import url('components/buttons.css');
+@import url('components/forms.css');
+
+
+.navigation {
+    background-color: var(--c-dark);
+}
+
+* {
+    font-family: var(--f-body);
+}
+
+
+h4 {
+    color: var(--c-primary);
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+h2 {
+    color: var(--c-primary);
+    font-weight: 900;
+    /*font-size: 2.5rem;*/
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--c-black);
+}
+
+.price {
+    display: inline-block;
+    margin: 0 0 50px 0;
+}
+
+.price h1 {
+    color: var(--c-secondary);
+    font-weight: 900;
+    font-size: 2.75rem;
+    margin: -30px 0;
+}
+
+.price h2 {
+    font-size: 1rem;
+    text-decoration: line-through var(--c-secondary);
+    float: right;
+    margin: 0 0 -10px 0;
+}
+
+
+.nav {
+    background-color: var(--c-dark);
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.nav h3 {
+    margin-left: 10px;
+    color: var(--c-white);
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.nav h3:hover {
+    font-weight: 900;
+}
+
+
+.lang {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 2px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: var(--c-white);
+
+}
+
+.lang:hover {
+    font-weight: 900;
+}
+
+.back {
+    color: var(--c-primary);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.back:hover {
+    font-weight: 700;
+}
+
+.back:active {
+    font-size: 1.5rem;
+}
+
+.star {
+    color: #BBC300;
+    font-size: 1.5rem;
+}
+
+.star .far {
+    color: #000000;
+}
